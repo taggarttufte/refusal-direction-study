@@ -1,0 +1,6 @@
+# This folder is gitignored. Drop PDF copies of cited papers here for offline
+# reading. They will not be committed to the repo (avoids redistributing
+# copyrighted PDFs).
+#
+# To populate from the citations in ../REFERENCES.md, you can use the arXiv
+# URLs directly (most papers we cite are arXiv preprints).

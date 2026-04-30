@@ -1,0 +1,7 @@
+model,n_prompts,n_layers,peak_layer,peak_norm,harmful_norm_at_peak,harmless_norm_at_peak,peak_layer_type
+gemma2_2b,512,27,25,461.4376,786.2260,606.1006,sliding_attention
+gemma3_1b,512,27,25,4213.9697,12661.4473,12203.3408,sliding_attention
+gemma4_e2b,512,36,35,123.7825,161.0668,188.4314,full_attention
+qwen25_0p5b,512,25,24,112.8093,278.9220,267.2503,full_attention
+qwen25_1p5b,512,29,27,99.9693,270.3561,244.2617,full_attention
+qwen25_3b,512,37,35,161.6210,361.9154,348.4189,full_attention

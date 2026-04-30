@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Notebooks
+.ipynb_checkpoints/
+
+# HuggingFace cache (gigabytes; users should download themselves)
+.cache/
+hf_cache/
+
+# Raw run output logs — these can contain full harmful model generations
+# (the same content the rest of the repo summarizes). Plots, CSVs, and
+# the lab notebook with abbreviated examples are committed; raw logs are not.
+results/*.log
+*.log
+
+# Local secrets / tokens
+.env
+.hf_token
+*.pem
+
+# Papers — folder exists for offline copies of cited papers, but PDFs
+# are not committed. See references/REFERENCES.md for citations + URLs.
+references/papers/*
+!references/papers/.gitkeep
