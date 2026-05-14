@@ -1,0 +1,5 @@
+model,short_name,post_attention_layernorm,post_feedforward_layernorm
+Qwen 2.5 1.5B,qwen25_1p5b,0.96,
+Gemma 2 2B,gemma2_2b,0.89,1.42
+Gemma 3 1B,gemma3_1b,19.76,33.69
+Gemma 4 E2B,gemma4_e2b,1.27,3.57
