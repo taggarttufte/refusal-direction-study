@@ -4,6 +4,15 @@ Structured findings table. Each row is one experiment with a clear claim and
 the evidence backing it. Source logs in `results/*.log`. Source notebook
 narrative in `LAB_NOTEBOOK.md`. Source plots in `results/*.png`.
 
+> **Note on evidence pointers:** `results/*.log` files are **excluded from the
+> public repo by design** (`.gitignore`) because raw logs contain full harmful
+> model generations — see README § Ethics. The log filenames in the Evidence
+> column document provenance; they are intentionally absent from a fresh clone,
+> not missing. Plots, CSVs, and `.pt` activation files *are* committed, and
+> `LAB_NOTEBOOK.md` carries abbreviated excerpts of the key generations.
+> (Numbering note: F16–F21 were notebook-only working entries; their narrative
+> lives in `LAB_NOTEBOOK.md`, which is why the table jumps F15 → F22.)
+
 ## Headline findings
 
 | # | Claim | Models | Evidence | Date |

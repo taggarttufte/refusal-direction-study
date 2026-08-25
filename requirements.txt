@@ -1,0 +1,6 @@
+# Minimal deps. The study ran fp16 inference-only on a 12 GB RTX 3080 Ti
+# (CUDA torch via the cu124 index — see README § Setup). Exact versions were
+# not pinned at run time; any recent torch/transformers should reproduce.
+torch
+transformers
+matplotlib
