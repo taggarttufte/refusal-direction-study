@@ -24,7 +24,7 @@ For each model and each layer, average the residual-stream activation at the las
 | Gemma 3 | 1B-IT | Alternating sliding/full, GeGLU, smaller sliding window (1024), inflated post-norm gains |
 | Gemma 4 | E2B-IT | Alternating + Per-Layer Embeddings, corrected post-norm calibration |
 
-All models tested at fp16 on a single 12 GB consumer GPU (RTX 3080 Ti). No HPC required; total compute ~2 hours.
+All six models tested at fp16 on a single 12 GB consumer GPU (RTX 3080 Ti). No HPC required; total compute ~2 hours.
 
 ## Detailed documentation
 
@@ -57,7 +57,7 @@ The findings include several explicit retractions (F25, F26, F27 partial, F31, F
 │
 ├── experiments/           runner scripts — one entry point per experiment block
 │   ├── preflight*.py          environment + model-loading sanity checks
-│   ├── run_extract_all.py     extract refusal directions for all 5 models
+│   ├── run_extract_all.py     extract refusal directions for all 6 models
 │   ├── analyze.py             per-layer norm + cosine plots
 │   ├── layer_sweep.py         ASR-vs-depth sweep (Qwen)
 │   ├── alpha_scan.py          amplification-magnitude scan
@@ -86,7 +86,7 @@ python -c "from huggingface_hub import login; login()"
 # 3. download prompts
 python src/get_data.py
 
-# 4. extract refusal directions for all 5 models (~7 min)
+# 4. extract refusal directions for all 6 models (~7 min)
 python experiments/run_extract_all.py --n 512
 
 # 5. validate the technique on Qwen 2.5 1.5B
